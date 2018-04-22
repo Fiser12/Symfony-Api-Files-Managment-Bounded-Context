@@ -35,6 +35,7 @@ src/App/Infrastructure/Ui/Assets/.stylelintrc.js
 !var/logs/.gitkeep
 /var/cache/*
 !var/cache/.gitkeep
+!var/cache/prod/.gitkeep
 .editorconfig
 .DS_Store
 

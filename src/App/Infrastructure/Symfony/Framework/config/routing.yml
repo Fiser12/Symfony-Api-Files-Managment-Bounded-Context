@@ -9,6 +9,8 @@
 # @author Gorka Laucirica <gorka.lauzirika@gmail.com>
 
 app_homepage:
-    path: /
+    path: /app/
     defaults:
         _controller: "app.http_action.home:__invoke"
+    methods:
+        - GET
