@@ -40,7 +40,7 @@ class FileController extends Controller
                     'allow_delete'        => true,
                     'validate_extensions' => true,
                     'validate_size'       => true,
-                    'private'             => false,
+                    'private'             => true,
                 ])
                 ->getForm();
 
