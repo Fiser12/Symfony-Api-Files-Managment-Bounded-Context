@@ -11,3 +11,6 @@
 services:
     app.http_action.home:
         class: App\Infrastructure\Symfony\HttpAction\HomeAction
+
+    app.controller.file_controller:
+        class: App\Infrastructure\Symfony\Controller\FileController

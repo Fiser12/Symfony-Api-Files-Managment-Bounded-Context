@@ -9,7 +9,6 @@
 
 parameters:
     enabled:
-        - twigcs
         - phpcsfixer
         - stylelint
         - eslint
@@ -26,8 +25,6 @@ parameters:
         - unusedcode
         - codesize
         - naming
-
-    twigcs_path: src/App/Infrastructure/Ui/Templates/Twig
 
     phpcsfixer_path: src
     phpcsfixer_test_path: tests

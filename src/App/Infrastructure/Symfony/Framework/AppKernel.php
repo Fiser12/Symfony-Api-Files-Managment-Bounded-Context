@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Php DDD Standard project.
+ * This file is part of the Php DDD Standard project project.
  *
  * Copyright (c) 2017-present-present LIN3S <info@lin3s.com>
  *
@@ -15,6 +15,7 @@ namespace App\Infrastructure\Symfony\Framework;
 
 use Doctrine\Bundle\DoctrineBundle\DoctrineBundle;
 use Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle;
+use Groovili\RestUploaderBundle\RestUploaderBundle;
 use LIN3S\Distribution\Php\Symfony\Lin3sDistributionBundle;
 use Sensio\Bundle\DistributionBundle\SensioDistributionBundle;
 use Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle;
@@ -23,7 +24,6 @@ use Symfony\Bundle\DebugBundle\DebugBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\MonologBundle\MonologBundle;
 use Symfony\Bundle\SecurityBundle\SecurityBundle;
-use Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle;
 use Symfony\Bundle\TwigBundle\TwigBundle;
 use Symfony\Bundle\WebProfilerBundle\WebProfilerBundle;
 use Symfony\Bundle\WebServerBundle\WebServerBundle;
@@ -43,7 +43,7 @@ class AppKernel extends Kernel
             new MonologBundle(),
             new SecurityBundle(),
             new SensioFrameworkExtraBundle(),
-            new SwiftmailerBundle(),
+            new RestUploaderBundle(),
             new TwigBundle(),
         ];
 

@@ -26,6 +26,8 @@
 /vendor
 src/App/Infrastructure/Ui/Assets/.eslintrc.js
 src/App/Infrastructure/Ui/Assets/.stylelintrc.js
+/private/*
+/src/App/Infrastructure/Ui/Assets/files/*
 
 /var/sessions/dev/*
 !var/sessions/dev/.gitkeep
