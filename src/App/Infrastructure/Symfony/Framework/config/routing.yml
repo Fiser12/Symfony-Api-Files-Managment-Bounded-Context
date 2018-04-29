@@ -8,20 +8,27 @@
 # @author Beñat Espiña <benatespina@gmail.com>
 # @author Gorka Laucirica <gorka.lauzirika@gmail.com>
 
+app_homepage:
+    path: /uploads/
+    defaults:
+        _controller: "app.http_action.home:__invoke"
+    methods:
+        - GET
+
 api.files.upload:
-    path:  /files
+    path:  /uploads/files
     defaults:
         _controller: "app.controller.file_controller:uploadAction"
     methods: [ POST ]
 
 api.files.cget:
-    path:  /files
+    path:  /uploads/files
     defaults:
         _controller: "app.controller.file_controller:cgetAction"
     methods: [ GET ]
 
 api.files.get:
-    path:  /files/{file}
+    path:  /uploads/files/{file}
     defaults:
         _controller: "app.controller.file_controller:getAction"
     methods: [ GET ]
@@ -29,7 +36,7 @@ api.files.get:
             file: '\d+'
 
 api.files.download:
-    path:  /files/{file}/download
+    path:  /uploads/files/{file}/download
     defaults:
         _controller: "app.controller.file_controller:downloadAction"
     methods: [ GET ]
@@ -37,7 +44,7 @@ api.files.download:
             file: '\d+'
 
 api.files.delete:
-    path:  /files/{file}
+    path:  /uploads/files/{file}
     defaults: { _controller: RestUploaderBundle:File:delete }
     defaults:
         _controller: "app.controller.file_controller:deleteAction"
